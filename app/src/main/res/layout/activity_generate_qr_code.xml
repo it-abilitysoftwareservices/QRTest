@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93A3E2"
+    tools:context=".GenerateQrCodeActivity">
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textColorHint="#000"
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/full_name"
+            android:inputType="textCapSentences"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textColorHint="#000"
+            android:layout_below="@+id/fullNameEditText"
+            android:id="@+id/phonenoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="@string/user_phone"
+            android:inputType="number"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    <EditText
+            android:layout_marginTop="10dp"
+            android:textColorHint="#000"
+            android:layout_below="@+id/phonenoEditText"
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Enter Address"
+            android:inputType="textCapSentences"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    <Button
+
+            android:textAllCaps="false"
+            android:layout_below="@+id/addressEditText"
+            android:id="@+id/generateQrCodeButton"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_scan_background"
+            android:text="@string/generate_qr_code"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"/>
+
+    <Button
+
+            android:textAllCaps="false"
+            android:layout_below="@+id/generateQrCodeButton"
+            android:id="@+id/generateQrCodeButtonOtherScanner"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_scan_background"
+            android:text="@string/generate_qr_code_other"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/generateQrCodeButtonOtherScanner"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+        <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/qrCodeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:contentDescription="@null" />
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Qr Code Test</string>
+    <string name="full_name">Enter Name</string>
+    <string name="user_phone">Enter Phone Number</string>
+    <string name="generate_qr_code">Generate QR Code For My Scanner App</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="barcode_reader">QR Code Reader</string>
+    <string name="app_needs_your_camera_permission_in_order_to_scan_qr_code">Your App Need Switch Camera Permission, Please Check Allow To Scan QR Code</string>
+    <string name="scanned_qr_code_result">Scanned QR Code Data Finally Result</string>
+    <string name="name">Name :</string>
+    <string name="phone">Phone No :</string>
+    <string name="qr_code">QR COde Tester</string>
+    <string name="generate_qr_code_other">Generate QR Code Data For Other Scanner App</string>
+</resources>
